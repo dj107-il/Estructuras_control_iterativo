@@ -1,0 +1,15 @@
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.AssemblyInfoInputs.cache
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.AssemblyInfo.cs
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.csproj.CoreCompileInputs.cache
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.sourcelink.json
+/workspaces/Estructuras_control_iterativo/control_iterativo/bin/Debug/net10.0/control_iterativo
+/workspaces/Estructuras_control_iterativo/control_iterativo/bin/Debug/net10.0/control_iterativo.deps.json
+/workspaces/Estructuras_control_iterativo/control_iterativo/bin/Debug/net10.0/control_iterativo.runtimeconfig.json
+/workspaces/Estructuras_control_iterativo/control_iterativo/bin/Debug/net10.0/control_iterativo.dll
+/workspaces/Estructuras_control_iterativo/control_iterativo/bin/Debug/net10.0/control_iterativo.pdb
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.dll
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/refint/control_iterativo.dll
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.pdb
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/control_iterativo.genruntimeconfig.cache
+/workspaces/Estructuras_control_iterativo/control_iterativo/obj/Debug/net10.0/ref/control_iterativo.dll
