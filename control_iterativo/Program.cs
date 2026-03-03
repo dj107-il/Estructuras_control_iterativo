@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+// Sección 1 — For y Foreach: Registro y análisis de calificaciones
+
 int[] calificaciones = {72, 85, 91, 60, 43, 78, 95, 55, 88, 67};
 
 Console.WriteLine("==== REGISTRO DE CALIFICACIONES ====");
