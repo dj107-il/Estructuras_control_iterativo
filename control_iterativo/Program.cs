@@ -2,19 +2,19 @@
 
 int[] calificaciones = {72, 85, 91, 60, 43, 78, 95, 55, 88, 67};
 
-Console.WriteLine("===== Registro de calificaciones =====");
+Console.WriteLine("==== REGISTRO DE CALIFICACIONES ====");
 for(int posicion = 0; posicion < calificaciones.Length; posicion++)
 {
     Console.WriteLine($"Estudiante {posicion + 1}: {calificaciones[posicion]}");
 }
 
-Console.WriteLine("\n===== Orden descendente =====");
+Console.WriteLine("\n===== ORDEN DESCENDENTE =====");
 for(int descendente = calificaciones.Length - 1; descendente >= 0; descendente--)
 {   
     Console.WriteLine($"Estudiante {descendente + 1}: {calificaciones[descendente]}");
 }
 
-Console.WriteLine("\n === Promedio del grupo ===");
+Console.WriteLine("\n === PROMEDIO DEL GRUPO ===");
 int suma = 0;
 foreach (int promedio in calificaciones)
 {
@@ -33,26 +33,31 @@ for(int posicion = 0; posicion < calificaciones.Length; posicion += 2)
 // Sección 2 — While y Do-While: Validación y juego interactivo
 
 int intentos = 0;
-String clave = "Sena2025";
+string clave = "sena2025";
+string ingreso = "";
 
-Console.WriteLine("\n === Control de acceso ===");
-while(intentos < 3)
+Console.WriteLine("\n === CONTROL DE ACCESO ===");
+
+while (ingreso != clave && intentos < 3)
 {
     Console.Write("Ingrese la clave: ");
-    String ingreso = Console.ReadLine();
-    if(ingreso == clave)
+    ingreso = Console.ReadLine();
+
+    if (ingreso == clave)
     {
         Console.WriteLine("Acceso concedido.");
         break;
-    }
-    else if(intentos == 2)
-    {
-        Console.WriteLine("Acceso bloqueado.");
-    }
-    else
+    }else
     {
         intentos++;
-        Console.WriteLine($"Clave incorrecta. Intentos restantes: {3 - intentos}");
+        if (intentos < 3)
+        {
+            Console.WriteLine($"Clave incorrecta. Intentos restantes: {3 - intentos}");
+        }
+        else
+        {
+            Console.WriteLine("Acceso bloqueado.");
+        }
     }
 }
 
@@ -61,7 +66,7 @@ do
 {
     Console.WriteLine("\n === Menú principal ===");
     Console.WriteLine("1. Ver el promedio del grupo");
-    Console.WriteLine("2. Ver caslificación más alta.");
+    Console.WriteLine("2. Ver calificación más alta.");
     Console.WriteLine("3. Salir");
     Console.Write("Seleccione una opción: ");
     opciones = int.Parse(Console.ReadLine());
@@ -93,8 +98,7 @@ do
 
 // Sección 3 — Break y Continue: Filtrado y búsqueda eficiente
 
-// 1. Primera calificación reprobatoria usando for y break
-Console.WriteLine("=== PRIMERA CALIFICACIÓN REPROBATORIA ===");
+Console.WriteLine("\n=== PRIMERA CALIFICACIÓN REPROBATORIA ===");
 for (int i = 0; i < calificaciones.Length; i++)
 {
     if (calificaciones[i] < 60)
@@ -104,21 +108,21 @@ for (int i = 0; i < calificaciones.Length; i++)
     }
 }
 
-// 2. Estudiantes aprobados usando foreach y continue
 Console.WriteLine("\n=== ESTUDIANTES APROBADOS ===");
 int aprobados = 0;
 foreach (int calificacion in calificaciones)
 {
-    if (calificacion < 60)
+    if (calificacion >= 60)
     {
-        continue;
+        Console.WriteLine($"Aprobado: {calificacion}");
+        aprobados++;
+    }else
+    {
+        continue;   
     }
-    Console.WriteLine($"Aprobado: {calificacion}");
-    aprobados++;
 }
 Console.WriteLine("Total aprobados: " + aprobados);
 
-// 3. Bucle combinado con break y continue
 Console.WriteLine("\n=== FILTRO COMBINADO ===");
 for (int i = 0; i < calificaciones.Length; i++)
 {
