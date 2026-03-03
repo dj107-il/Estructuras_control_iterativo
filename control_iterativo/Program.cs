@@ -64,7 +64,7 @@ while (ingreso != clave && intentos < 3)
 int opciones;
 do
 {
-    Console.WriteLine("\n === Menú principal ===");
+    Console.WriteLine("\n === MENÚ PRINCIPAL ===");
     Console.WriteLine("1. Ver el promedio del grupo");
     Console.WriteLine("2. Ver calificación más alta.");
     Console.WriteLine("3. Salir");
